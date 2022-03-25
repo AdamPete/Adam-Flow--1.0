@@ -5,19 +5,72 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Adam(Flow) helps businesses establish better since IID ">
+  <meta name="keywords"
+    content="HTML, CSS, JavaScript, Freelancer, Sioux Falls, South Dakota, small businesses, developing, websites and brands, marketing">
+  <meta name="description"
+    content="Adam(Flow) helps businesses build better designed websites, brands, and much more. By providing real and organic services. Connecting the internet with your business. ">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
-  <link rel="shortcut icon" type="image" href="/public/imgs/LogoTest2.png">
-  <title>Adam Peterson | Design and Develop a better Internet Identity </title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" type="image" href="/public/imgs/adam_flow_logo_2.0.png">
+  <title>Adam(Flow) | Start designing and developing a better internet identity.</title>
+
 </head>
 
 <body>
+  <style>
+    css-doodle {
+      --color: @p(#d4b07a, #eeca94, #f6e2c4, );
+
+      --rule: ( :doodle {
+          @grid: 30x1 / 18vmin;
+          --deg: @p(-180deg, 180deg);
+        }
+
+        :container {
+          perspective: 30vmin;
+        }
+
+        :after, :before {
+          content: '';
+          background: var(--color);
+          @place-cell: @r(100%) @r(100%);
+          @size: @r(6px);
+          @shape: heart;
+        }
+
+        @place-cell: center;
+        @size: 100%;
+
+        box-shadow: @m2(0 0 50px var(--color));
+        background: @m100(radial-gradient(var(--color) 50%, transparent 0) @r(-20%, 120%) @r(-20%, 100%) / 1px 1px no-repeat);
+
+        will-change: transform, opacity;
+        animation: scale-up 12s linear infinite;
+        animation-delay: calc(-12s / @I * @i);
+
+        @keyframes scale-up {
+          0%, 95.01%, 100% {
+            transform: translateZ(0) rotate(0);
+            opacity: 0;
+          }
+
+          10% {
+            opacity: 1;
+          }
+
+          95% {
+            transform: translateZ(35vmin) rotateZ(@var(--deg));
+          }
+        }
+
+      )
+    }
+  </style>
 
   <div class="card">
     <div class="profile-sidebar">
@@ -30,29 +83,37 @@
           <a class="social-link" href="https://discord.com/channels/@me">
             <i class="fab fa-discord"></i></a>
         </li>
-        <li class="social-item">
-          <a class="social-link" href="#">
-            <i class="fab fa-instagram"></i></a>
-        </li>
       </ul>
     </div>
     <div class="profile-main">
-      <h2 class="profile-name">Adam Peterson</h2>
-      <p class="profile-position">Self-Taught Developer</p>
-      <p class="profile-body">Welcome to my website! It's still a work in progress... I've been programming for a couple
-        of
-        years now. I build and help
-        businesses get more out of their websites. Making them more effiecent and aesthetically pleasing. To see my work
-        view my <a class="social-link" href="https://www.fiverr.com/adamflo?up_rollout=true">fiverr</a>
-        or <a class="social-link" href="https://github.com/AdamPete">github</a></p>
-      <h3 class="profile-name">Contact</h3>
+      <h2 class="profile-name">Adam(Flow)</h2>
+      <p class="profile-position">Design, Develop, and Deliver</p>
+      <p class="profile-body"><span>Adam(Flow)</span> helps small businesses incorporate <span>better designed
+          websites,
+          brands, and
+          overall greater understanding of the
+          internet </span> in a custom way. They're a lot of businesses with horribly designed websites and that really
+        <span>effects
+          your customer base.</span> With my help, <span>I can provide value</span> to your company by <span>designing,
+          developing, and
+          delivering</span>
+        that
+        extends your businesses message across <span>in a organic way.</span>
+        If you have a website <span>email me</span> your URL, for a free website conversion report.
+      </p>
+      <h3 class="profile-name"><span>Contact</span></h3>
       <!-- <p class="profile-position">612-402-0804</p> -->
-      <p class="profile-body">You can contact me about potential projects via: <a class="social-link"
-          href="mailto:adampetebuz@protonmail.com">Email</a></p>
+      <p class="profile-body">You can contact me through <a class="social-link"
+          href="mailto:adam@adamflow.com">Email</a>
+      </p>
       <p class="profile-body">Thanks!</p>
     </div>
   </div>
 
+  <css-doodle use="var(--rule)"></css-doodle>
+
 </body>
+
+<script src="https://unpkg.com/css-doodle@0.26.3/css-doodle.min.js"></script>
 
 </html>

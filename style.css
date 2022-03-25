@@ -3,32 +3,30 @@
 }
 
 body {
-  line-height: 1.5;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #ffbf00;
-  font-family: 'Noto Sans', sans-serif;
-  font-family: 'Ubuntu', sans-serif;
+  background-color: #2666cf;
+  font-family: 'Nunito', sans-serif;
   overflow: hidden;
 }
 
 .card {
-  box-shadow: 1rem 1rem 3rem rgba(0, 0, 0, 0.6);
-  width: 85%;
-  max-width: 900px;
+  width: 100%;
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
-  background-color: #0040ff;
-  color: #fffffe;
+  background-color: transparent;
+  color: #eee;
   text-align: center;
   padding: 3em;
-  z-index: 1;
+  z-index: 100;
   transition: all 0.7s ease-in-out;
 }
 
 .card:hover {
+  background-color: white;
   transform: scale(1.1);
 }
 
@@ -54,17 +52,23 @@ body {
   text-transform: uppercase;
   font-size: 1rem;
   letter-spacing: 1px;
+  font-weight: 700;
   color: #fffffe;
   margin-bottom: 1em;
 }
 
 .profile-body {
-  font-weight: 500;
-  font-size: 18px;
-  opacity: 1;
+  font-weight: 400;
+  line-height: 1.8;
+  font-size: 20px;
   padding: 5px;
-  margin-bottom: 0;
-  color: white;
+  margin-bottom: 30px;
+  color: #fffffe;
+}
+
+span {
+  color: #ecc488;
+  font-weight: 700;
 }
 
 .profile-img {
@@ -85,8 +89,8 @@ body {
 }
 
 .social-link {
-  color: #fffffe;
-  opacity: 0.5;
+  color: #ecc488;
+  opacity: 0.9;
   font-size: 1.325rem;
 }
 
