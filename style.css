@@ -9,6 +9,7 @@ body {
   justify-content: center;
   background-color: #2666cf;
   font-family: 'Nunito', sans-serif;
+  overflow: hidden;
 }
 
 .card {
@@ -21,12 +22,17 @@ body {
   text-align: center;
   padding: 3em;
   z-index: 100;
-  transition: all 0.7s ease-in-out;
+  transition: all 0.3s ease;
 }
 
 .card:hover {
   background-color: white;
-  transform: scale(1.1);
+  box-shadow: inset 0 0 0 3px black;
+}
+
+.profile-img {
+  height: auto;
+  width: 150px;
 }
 
 .profile-name {
@@ -34,6 +40,7 @@ body {
   line-height: 1.1;
   letter-spacing: 1px;
   margin: 0;
+  color: white;
 }
 
 .profile-name::after {
@@ -66,7 +73,7 @@ body {
 }
 
 span {
-  color: #ecc488;
+  color: black;
   font-weight: 700;
 }
 
@@ -89,8 +96,9 @@ span {
 
 .social-link {
   color: #ecc488;
-  opacity: 0.9;
-  font-size: 1.325rem;
+  font-weight: 700;
+  opacity: 1;
+  font-size: 1.2rem;
 }
 
 .social-link:hover,
